@@ -3,54 +3,13 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import GameCard from "./components/GameCard";
 import { useState } from "react";
+import games from "./data/games.json";
 
 function App() {
     
     const [search, setSearch] = useState("");
-    const games = [
     
-
-    {
-        id: 1,
-        title: "Minecraft",
-        platform: "PC"
-    },
-
-    {
-        id: 2,
-        title: "Mario Kart",
-        platform: "Nintendo Switch"
-    },
-
-    {
-        id: 3,
-        title: "Rocket League",
-        platform: "PlayStation 5"
-    },
-
-{
-    id: 4,
-    title: "Fc 27",
-    platform: " PlayStation 5, Xbox Series X, PC"
-},
-
-{
-    id: 5,
-    title: "The Legend of Zelda",
-    platform: "Nintendo Switch"
-},
-{
-    id: 6,
-    title: "Fortnite",
-    platform: "PC"
-},
-{
-    id: 7,
-    title: "EA Sports FC 26",
-    platform: "PlayStation 5"
-}
-
-];
+;
 
     return (
 
@@ -88,13 +47,19 @@ function App() {
 
     <GameCard
 
-        key={game.id}
+    key={game.id}
 
-        title={game.title}
+    title={game.title}
 
-        platform={game.platform}
+    platform={game.platform}
 
-    />
+    genre={game.genre}
+
+    rating={game.rating}
+
+    year={game.year}
+
+/>
 
 ))}
 
