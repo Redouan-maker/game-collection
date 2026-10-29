@@ -1,19 +1,23 @@
 import "./App.css";
 
-function App() { 
- return ( 
- <> 
- <h1>🎮 Game Collection</h1> 
- 
- <h2>Welkom bij mijn eerste React-applicatie!</h2> 
- 
- <p>Naam: Redouan Abouhcen</p> 
- 
- <p>Studentnummer: 2229629</p> 
- 
- <p>Klas: 5B</p> 
- </> 
- ); 
-} 
- 
+function App() {
+  return (
+    <div className="container">
+      <h1 className="title">
+        🎮 Game Collection
+      </h1>
+
+      <div className="games">
+        <h2>Welkom bij mijn eerste React-applicatie!</h2>
+
+        <p>Naam: Jouw naam</p>
+
+        <p>Studentnummer: Jouw studentnummer</p>
+
+        <p>Klas: Jouw klas</p>
+      </div>
+    </div>
+  );
+}
+
 export default App;
