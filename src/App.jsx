@@ -59,6 +59,8 @@ function App() {
 
     year={game.year}
 
+    image={game.image}
+
 />
 
 ))}

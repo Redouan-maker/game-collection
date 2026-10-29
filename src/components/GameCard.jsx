@@ -6,6 +6,16 @@ import { useState } from "react";
 
         <div className="game-card">
 
+            <img
+
+        src={`public/images/${props.image}`}
+
+        alt={props.title}
+
+        className="game-image"
+
+       />
+
             <h2>{props.title}</h2>
 
             <p>Platform: {props.platform}</p>
